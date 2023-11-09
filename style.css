@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
 /*
 
 _____________________
@@ -40,12 +42,36 @@ article:nth-child(5) {
   border-bottom: none;
 }
 
+# = id
+id is unique, only one element can use it
+
+em - width of "m"
+ex - hight of "x"
+
 */
+body{
+  font-family: 'Playfair Display', serif;
+}
 
 header {
   border-bottom: 1px solid gray;
   margin-bottom: 1.5vh;
   padding: none;
+}
+
+
+#price,
+#date {
+  display: inline-block;
+  width: calc(50% - 1em)
+}
+
+#price {
+ margin-left: 2vw; 
+}
+
+#date {
+  text-align: right;
 }
 
 h1 {
