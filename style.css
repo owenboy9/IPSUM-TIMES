@@ -36,11 +36,16 @@ article:last-child {
   border-bottom: none;
 } --> pseudo-selector
 
-rticle:nth-child(5) {
+article:nth-child(5) {
   border-bottom: none;
 }
 
 */
+
+header {
+  border-bottom: 1px solid gray;
+  margin-bottom: 1.5vw;
+}
 
 h1 {
   text-align: center;
@@ -50,8 +55,15 @@ main {
   display: flex;
 }
 
+main>div{
+  width: 25vw;
+}
+
+main>div:nth-child(2){
+  width:50vw;
+}
 main div {
-  padding: 1vh 1vw;
+  padding: 1vh 2vw;
   /*viewport hight, viewport width: relative to the whole page; if you use %, it refers to every single element (worse solution)*/
 }
 
@@ -61,9 +73,17 @@ main div {
 }
 
 article {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
 }
 
 article:last-child {
   border-bottom: none;
+}
+
+main>div:first-child {
+  border-right: 1px solid gray;
+}
+
+main>div:last-child {
+  border-left: 1px solid gray;
 }
