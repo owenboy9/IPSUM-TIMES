@@ -44,28 +44,33 @@ article:nth-child(5) {
 
 header {
   border-bottom: 1px solid gray;
-  margin-bottom: 1.5vw;
+  margin-bottom: 1.5vh;
+  padding: none;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 0.5;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 main {
   display: flex;
 }
 
-main>div{
-  width: 25vw;
-}
-
-main>div:nth-child(2){
-  width:50vw;
-}
-main div {
+main>div {
+  width: 26vw;
   padding: 1vh 2vw;
   /*viewport hight, viewport width: relative to the whole page; if you use %, it refers to every single element (worse solution)*/
 }
+
+main>div:nth-child(2) {
+  width: 45vw;
+}
+
 
 .author {
   font-style: italic;
@@ -74,10 +79,16 @@ main div {
 
 article {
   border-bottom: 1px solid gray;
+  margin-bottom: 2.5vh;
+  text-align: justify;
 }
 
 article:last-child {
   border-bottom: none;
+}
+
+article>div>img {
+  width: 100%;
 }
 
 main>div:first-child {
