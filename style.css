@@ -16,17 +16,46 @@ klockan{
 }
 if you want to have the same up & down and/or left&right – just write it once
 
+.author -->shorthand for class;
+you could write it like this: class:author
+
+div>* {
+  border: 5px solid green;
+} --> direct descendant selector: ALL ELEMENTS WITHIN every DIV
+
+div * {
+  border: 5px solid green;
+}
+--> all descendant selector: ALL ELEMENTS WITHIN every element from here down
+
+article:last-child {
+  border-bottom: none;
+} --> pseudo-selector
+
 */
 
-h1{
+h1 {
   text-align: center;
 }
 
-main{
+main {
   display: flex;
 }
 
-main div{
-  padding: 3vh 2vw; 
+main div {
+  padding: 1vh 1vw;
   /*viewport hight, viewport width: relative to the whole page; if you use %, it refers to every single element (worse solution)*/
+}
+
+.author {
+  font-style: italic;
+  text-align: right;
+}
+
+article {
+  border-bottom: 1px solid black;
+}
+
+article:last-child {
+  border-bottom: none;
 }
