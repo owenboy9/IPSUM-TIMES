@@ -1,8 +1,12 @@
 /*
+
+_____________________
 selector{
   attribute1: value1;
   attribute2: value2;
 }
+_____________________
+
 
 the way to do it in .js: element.style.textAlign=center 
 
@@ -31,6 +35,10 @@ div * {
 article:last-child {
   border-bottom: none;
 } --> pseudo-selector
+
+rticle:nth-child(5) {
+  border-bottom: none;
+}
 
 */
 
